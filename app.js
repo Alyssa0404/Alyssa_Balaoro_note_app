@@ -31,7 +31,22 @@ if (data[2] == 'delete') {
     let id = data [3]
     let oldNote = read()
 
-    let del = require('./del')
-    del (id,oldNote)
+    let remove = require('./remove')
+    remove (id,oldNote)
     console.log(read())
 }
+// var note = {}
+// let update = require('./update') 
+// if (data[2] == 'update') { 
+//    let note = { 
+//         id : data [3],
+//         title: data[4],
+//         body: data[5]
+//     }
+    
+ 
+//  var oldNote = read()
+
+//  update(note,oldNote)
+
+// }
