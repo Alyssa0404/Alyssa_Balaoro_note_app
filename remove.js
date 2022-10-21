@@ -1,5 +1,4 @@
 const fs = require ('fs')
-const { stringify } = require('querystring')
 
 const remove= function(id, oldNote)   {
     const note =JSON.parse(oldNote)
